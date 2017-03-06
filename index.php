@@ -15,7 +15,7 @@
       <input id="tab-2" type="radio" name="tab" class="sign-up" ><label for="tab-2" class="tab">La Fuerza</label>
       
       <div class="login-form">
-        <form name="peti" method="_POST" action="chur/un.php">
+        <form name="peti" method="_POST" action="chur/un.html">
           <div class="sign-in-htm"><br>
             <div class="group">
               <label for="user" class="label">Usuario</label><br>
