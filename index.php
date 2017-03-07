@@ -1,3 +1,8 @@
+<?php 
+  foreach ($_POST as $key => $value) {
+    echo '<p><strong>' . $key.':</strong> '.$value.'</p>';
+  }
+?>
 <!DOCTYPE html>
 <html >
 <head>
@@ -16,7 +21,7 @@
       <input id="tab-2" type="radio" name="tab" class="sign-up" ><label for="tab-2" class="tab">La Fuerza</label>
       
       <div class="login-form">
-        <form name="peti" method="_POST" action="chur/un.html">
+        <form name="peti" method="POST" action="chur/un.html">
         <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
           <div class="sign-in-htm"><br>
             <div class="group">
