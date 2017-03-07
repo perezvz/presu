@@ -5,6 +5,7 @@
   <title>Presupuesto La Fuerza</title>
   <link rel='stylesheet prefetch' href='css/fonts.css'>
   <link rel="stylesheet" href="css/style.css">
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -16,6 +17,7 @@
       
       <div class="login-form">
         <form name="peti" method="_POST" action="chur/un.html">
+        <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
           <div class="sign-in-htm"><br>
             <div class="group">
               <label for="user" class="label">Usuario</label><br>
@@ -29,6 +31,10 @@
               <input id="check" type="checkbox" class="check" checked>
               <label for="check"><span class="icon"></span> Keep me Signed in</label>
             </div> -->
+            <div class="group">
+              <div class="g-recaptcha" data-sitekey="6Lea5xcUAAAAAOZjDv8j47hM1k0W-fnyuisSJ22H"></div>
+            </div>
+
             <div class="group"><br>
               <input type="submit" class="button" value="Ingresar">
             </div>
