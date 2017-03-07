@@ -1,5 +1,5 @@
 <?php 
-  require_once "recaptchalib.php";
+  include 'recaptchalib.php';
   // tu clave secreta
   $secret = "6Lea5xcUAAAAAKSo-6dgk-qZ2eyuezFRKm4iWJ-o";
   // respuesta vacía
@@ -29,7 +29,7 @@
         } else {
       ?>
       <div class="login-form">
-        <form name="peti" method="POST" action="chur/un.html">
+        <form name="peti" method="POST" action="index.php">
         <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
           <div class="sign-in-htm"><br>
             <div class="group">
