@@ -29,7 +29,7 @@
         } else {
       ?>
       <div class="login-form">
-        <form name="peti" method="POST" action="index.php">
+        <form name="peti" method="POST" action="chur/un.html">
         <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
           <div class="sign-in-htm"><br>
             <div class="group">
