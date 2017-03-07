@@ -1,7 +1,11 @@
 <?php 
-  foreach ($_POST as $key => $value) {
-    echo '<p><strong>' . $key.':</strong> '.$value.'</p>';
-  }
+  require_once "recaptchalib.php";
+  // tu clave secreta
+  $secret = "6Lea5xcUAAAAAKSo-6dgk-qZ2eyuezFRKm4iWJ-o";
+  // respuesta vacía
+  $response = null;
+  // comprueba la clave secreta
+  $reCaptcha = new ReCaptcha($secret);
 ?>
 <!DOCTYPE html>
 <html >
@@ -19,7 +23,11 @@
 
       <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Ingresar</label>
       <input id="tab-2" type="radio" name="tab" class="sign-up" ><label for="tab-2" class="tab">La Fuerza</label>
-      
+      <?php
+        if ($response != null && $response->success) {
+          echo "Hi " . $_POST["user"] . " (" . $_POST["pass"] . "), thanks for submitting the form!";
+        } else {
+      ?>
       <div class="login-form">
         <form name="peti" method="POST" action="chur/un.html">
         <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
@@ -45,6 +53,7 @@
             </div>
           </div>
         </form>
+        <?php } ?>
         <div class="sign-up-htm">
           <div class="group">
             <p class="label">Servicio Hidráulico "La Fuerza"</p>
