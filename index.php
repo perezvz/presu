@@ -1,9 +1,9 @@
 <?php
 session_start( );
-if(isset($_SESSION["inside"])){
+/*if(isset($_SESSION["inside"])){
     header("Location: chur/un.html");
   }
-  else { 
+  else { */
 ?>
 <!DOCTYPE html>
 <html >
@@ -23,7 +23,7 @@ if(isset($_SESSION["inside"])){
       <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Ingresar</label>
       <input id="tab-2" type="radio" name="tab" class="sign-up" ><label for="tab-2" class="tab">La Fuerza</label>
       <div class="login-form">
-        <form name="access" method="POST" action="captcha/captcha-verify.php">
+        <form name="access" method="POST" action="captcha/verify.php">
           <div class="sign-in-htm"><br>
             <div class="group">
               <label for="user" class="label">Usuario</label>
@@ -36,13 +36,13 @@ if(isset($_SESSION["inside"])){
             <!--<div class="group">
               <input id="check" type="checkbox" class="check" checked>
               <label for="check"><span class="icon"></span> Keep me Signed in</label>
-            </div> -->
+            </div> --
             <div class="group" align="center">
               <img src="captcha/captcha.php" border="2" /><br><br>
               <label for="code" class="label" align="left">Ingrese el Código</label>
               <input id="code" type="text" name="code" width="25" class="input" data-type="input" required="">
 
-            </div>
+            </div>-->
             <div class="group"><br>
               <input type="submit" class="button" value="Ingresar" name="submit">
             </div>
@@ -68,4 +68,4 @@ if(isset($_SESSION["inside"])){
   </div>  
 </body>
 </html>
-<?php } ?>
+<?php //} ?>

@@ -27,7 +27,7 @@ do {
 
 	/* Draw our randomly generated string to our captcha using the given true type font. In this case, I am using BitStream Vera Sans Bold, but you could modify it to any other font you wanted to use. */
 	//imagettftext( $captchaImage, 35, -3, 40, 40, $textColor, "fonts/VeraBd.ttf", $key );
-	imagettftext( $captchaImage, 35, -3, 40, 40, $textColor, "fonts/Raleway-BoldItalic.ttf", $key );
+	imagettftext( $captchaImage, 35, -3, 40, 40, $textColor, "./fonts/Raleway-BoldItalic.ttf", $key );
 	header ( "Content-type: image/png" ); // Output the image to the browser, header settings prevent caching
 	header("Cache-Control: no-cache, must-revalidate");
 	header("Expires: Fri, 19 Jan 1994 05:00:00 GMT");
