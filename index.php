@@ -1,9 +1,9 @@
 <?php
 session_start( );
-/*if(isset($_SESSION["inside"])){
+if(isset($_SESSION["inside"])){
     header("Location: chur/un.html");
   }
-  else { */
+  else { 
 ?>
 <!DOCTYPE html>
 <html >
@@ -68,4 +68,4 @@ session_start( );
   </div>  
 </body>
 </html>
-<?php //} ?>
+<?php } ?>
