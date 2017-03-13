@@ -1,44 +1,21 @@
 <!DOCTYPE html>
 <html>
-<?php include('head.html'); ?>
+<?php include('html/head.html'); ?>
 
 <body class="w3-light-grey w3-content" style="max-width:1600px">
+<?php include('html/menu.html'); ?>
 
-<!-- Inicio Sidenav/Menu -->
-<nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
-  <div class="w3-container">
-    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <img src="images/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br>
-    <h4 class="w3-padding-0"><b>PORTFOLIO</b></h4>
-    <p class="w3-text-grey">Template by W3.CSS</p>
-  </div>
-  <a href="#portfolio" onclick="w3_close()" class="w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
-  <a href="#about" onclick="w3_close()" class="w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
-  <a href="#contact" onclick="w3_close()" class="w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
-   
-  <div class="w3-section w3-padding-top w3-large">
-    <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
-    <a href="#" class="w3-hover-white w3-hover-text-purple w3-show-inline-block"><i class="fa fa-star-o"></i></a>
-    <a href="#" class="w3-hover-white w3-hover-text-yellow w3-show-inline-block"><i class="fa fa-power-off"></i></a>
-    <a href="#" class="w3-hover-white w3-hover-text-red w3-show-inline-block"><i class="fa fa-pinterest-p"></i></a>
-    <a href="#" class="w3-hover-white w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-twitter"></i></a>
-    <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-linkedin"></i></a>
-  </div>
-</nav><!--Fin Sidenav/Menu -->
-
-<!-- Overlay effect when opening sidenav on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
+<!-- Inicio Contenedor -->
 <div class="w3-main" style="margin-left:300px">
 
   <!-- Header -->
   <header class="w3-container" id="portfolio">
-    <a href="#"><img src="images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <a href="#">
+      <img src="images/perfil.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity">
+    </a>
     <span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <h1><b>My Portfolio</b></h1>
+    <h1><b>Servicio Hidraulico</b></h1>
+    <h3><b>La Fuerza</b></h3>
     <div class="w3-section w3-bottombar w3-padding-16">
       <span class="w3-margin-right">Filter:</span> 
       <button class="w3-button w3-black">ALL</button>
