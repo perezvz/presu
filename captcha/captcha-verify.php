@@ -14,7 +14,7 @@ else {
 	
 	if($user=="lola" && $pass=="mass"){
 		$_SESSION['inside'] = md5( $user );
-		header("refresh:0; url=../chur/un.html");		
+		header("refresh:0; url=../chur/index.php");		
 	}
 	else{
 		echo "<script type='text/javascript'>
