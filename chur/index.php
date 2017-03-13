@@ -1,23 +1,10 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/w3.css">
-<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">-->
-<link rel="stylesheet" href="css/fonts.css?family=Raleway">
-<link rel="stylesheet" href="css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {
-  font-family: "Raleway", sans-serif
-}
-.w3-sidenav a,.w3-sidenav h4 {
-  font-weight:bold
-}
-</style>
+<?php include('head.html'); ?>
+
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
-<!-- Sidenav/menu -->
+<!-- Inicio Sidenav/Menu -->
 <nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
   <div class="w3-container">
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
@@ -33,13 +20,13 @@ body,h1,h2,h3,h4,h5,h6 {
    
   <div class="w3-section w3-padding-top w3-large">
     <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
-    <a href="#" class="w3-hover-white w3-hover-text-purple w3-show-inline-block"><i class="fa fa-instagram"></i></a>
-    <a href="#" class="w3-hover-white w3-hover-text-yellow w3-show-inline-block"><i class="fa fa-snapchat"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-purple w3-show-inline-block"><i class="fa fa-star-o"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-yellow w3-show-inline-block"><i class="fa fa-power-off"></i></a>
     <a href="#" class="w3-hover-white w3-hover-text-red w3-show-inline-block"><i class="fa fa-pinterest-p"></i></a>
     <a href="#" class="w3-hover-white w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-twitter"></i></a>
     <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-linkedin"></i></a>
   </div>
-</nav>
+</nav><!--Fin Sidenav/Menu -->
 
 <!-- Overlay effect when opening sidenav on small screens -->
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
