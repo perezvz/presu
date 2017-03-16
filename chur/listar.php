@@ -4,14 +4,22 @@
 
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 <?php include('html/menu.html'); ?>
-
+<h5 align="center"><b>Lista de nuevos presupuestos</b></h5>
+    <div class="w3-section w3-bottombar w3-padding-16">      
+    </div>
+  </header><!-- Fin Header -->
   <!-- Espacio de trabajo-->
   <div class="w3-responsive">
     <table class="w3-table-all w3-centered w3-hoverable">
       <tr class="w3-red">
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Points</th>
+        <th>Folio</th>
+        <th>Nombre</th>
+        <th>Paterno</th>
+        <th>Materno</th>
+        <th>Razon</th>
+        <th>Telefono</th>
+        <th>Modificar</th>
+        <th>Eliminar</th>
       </tr>
       <tr class="w3-hover-green">
         <td>Jill</td>

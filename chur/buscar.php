@@ -4,7 +4,9 @@
 
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 <?php include('html/menu.html'); ?>
-
+    <div class="w3-section w3-bottombar w3-padding-16">      
+    </div>
+  </header><!-- Fin Header -->
   <!-- Espacio de trabajo-->
   <div class="w3-responsive">
     <table class="w3-table-all w3-centered w3-hoverable">
