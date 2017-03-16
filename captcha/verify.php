@@ -4,7 +4,7 @@ $user = strtolower($_POST["user"]);
 $pass = $_POST["pass"];
 	if($user=="lola" && $pass=="mass"){
 		$_SESSION['inside'] = md5( $user );
-		header("refresh:0; url=../chur/index.php");		
+		header("refresh:0; url=../chur/listar.php");		
 	}
 	else{
 		echo "<script type='text/javascript'>

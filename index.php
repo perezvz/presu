@@ -1,7 +1,7 @@
 <?php
 session_start( );
 if(isset($_SESSION["inside"])){
-    header("Location: chur/index.php");
+    header("Location: chur/listar.php");
   }
   else { 
 ?>
