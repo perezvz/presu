@@ -1,3 +1,7 @@
+<?php
+session_start( );
+if(isset($_SESSION["inside"])){
+?>
 <!DOCTYPE html>
 <html>
 <?php include('html/head.html'); ?>
@@ -40,3 +44,7 @@
 <?php include('html/footer.html'); ?>
 </body>
 </html>
+<?php }
+else { 
+  header("Location: ./error/403.html");
+}?>

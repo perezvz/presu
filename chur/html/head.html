@@ -1,3 +1,4 @@
+<head>
 <title>Generador de Presupuesto</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -5,6 +6,7 @@
 <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">-->
 <link rel="stylesheet" href="css/fonts.css?family=Raleway">
 <link rel="stylesheet" href="css/font-awesome.min.css">
+<script type="text/javascript" language="javascript" src="js/funciones.js"></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {
   font-family: "Raleway", sans-serif
@@ -13,3 +15,11 @@ body,h1,h2,h3,h4,h5,h6 {
   font-weight:bold
 }
 </style>
+<script type="text/javascript">
+//*** Este Codigo permite expirar sesion en 10 min
+window.onload = function(){ killerSession();}
+function killerSession(){ //60000 * 1 min
+	setTimeout("window.open('clogout.php','_top');",600000); 
+} 
+</script>
+</head>
