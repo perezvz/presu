@@ -25,7 +25,7 @@ function ValidaRfc(rfcStr) {
 	var matchArray=strCorrecta.match(validRfc);
 	if (matchArray==null) {
 		alert('RFC Incompleto');
-		document.cliente.rfc.focus();
+		//document.cliente.rfc.focus();
 		return false;
 	}		
 }

@@ -25,7 +25,7 @@ if(isset($_SESSION["inside"])){
     </div>
     <div class="w3-half">
       <label>Direccion</label>
-      <input class="w3-input w3-border w3-round-large" type="text" name="direccion" placeholder="Direccion">
+      <input class="w3-input w3-border w3-round-large" type="text" name="direccion" placeholder="Direccion" style="text-transform:capitalize">
     </div>
     <div class="w3-half">
       <label>Fecha (Mes/Dia/Año)</label>
@@ -39,23 +39,7 @@ if(isset($_SESSION["inside"])){
 </div>
 
 <!--Delete-->
-<br>
-<form>
-     Add your homepage:
-  <input type="url" name="homepage">
-  <br>
-  <script>
 
-function vNom(solicitar){
-    var txt = solicitar.value;
-    solicitar.value = txt.substring(0,1).toUpperCase() + txt.substring(1,txt.length);
-}
-
-</script>
-
-<INPUT type="text" onkeyup="vNom(this)" />  
-</form>
-<!--Delete-->
 
 <div class="w3-row-padding">
     <div class="w3-half">
@@ -91,7 +75,7 @@ function vNom(solicitar){
     </div>
     <div class="w3-half">
       <label>Concepto</label>
-      <input class="w3-input w3-border w3-round-large" type="text" name="concepto" placeholder="Concepto">
+      <input class="w3-input w3-border w3-round-large" type="text" name="concepto" placeholder="Concepto" style="text-transform:capitalize">
     </div>
     <div class="w3-half">
       <label>Precio Unitario</label>

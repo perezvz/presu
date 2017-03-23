@@ -1,9 +1,10 @@
 <?php
-session_start( );
-if(isset($_SESSION["inside"])){
-    header("Location: chur/listar.php");
-  }
-  else { 
+require_once("./chur/read/co_conec.php");
+require_once("./chur/read/co_logueo.php");
+if(isset($_SESSION["inside"]) ){
+header("refresh:0; url=chur/listar.php");
+}
+else{
 ?>
 <!DOCTYPE html>
 <html >
@@ -23,7 +24,7 @@ if(isset($_SESSION["inside"])){
       <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Ingresar</label>
       <input id="tab-2" type="radio" name="tab" class="sign-up" ><label for="tab-2" class="tab">La Fuerza</label>
       <div class="login-form">
-        <form name="access" method="POST" action="captcha/verify.php">
+        <form name="access" method="POST" action="chur/read/mo_logueo.php">
           <div class="sign-in-htm"><br>
             <div class="group">
               <label for="user" class="label">Usuario</label>
@@ -44,7 +45,7 @@ if(isset($_SESSION["inside"])){
 
             </div>-->
             <div class="group"><br>
-              <input type="submit" class="button" value="Ingresar" name="submit">
+              <input type="submit" class="button" value="Ingresar" name="open">
             </div>
           </div>
         </form>
