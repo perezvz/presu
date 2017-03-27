@@ -1,6 +1,6 @@
 <?php
-include("./chur/read/co_conec.php");
-include("./chur/read/co_logueo.php");
+//include("./chur/read/co_conec.php");
+//include("./chur/read/co_logueo.php");
 if(isset($_SESSION["inside"]) ){
 header("refresh:0; url=chur/listar.php");
 }
