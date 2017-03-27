@@ -1,4 +1,5 @@
 <?php
+include("./read/co_conec.php");
 if(isset($_SESSION["inside"])){
 ?>
 <!DOCTYPE html>
